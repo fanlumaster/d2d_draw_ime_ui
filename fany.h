@@ -70,3 +70,6 @@ void DrawEllipse(float x, float y, float width, float height, float thickness,
 // Draw a string on the screen.  Input is in the form of an std::string.
 void DrawString(std::string str, float fontSize, float x, float y, float r,
                 float g, float b, float a = 1);
+
+void DrawString2(std::string str, float fontSize, float x, float y, float r,
+                float g, float b, float a);
