@@ -476,6 +476,20 @@ void drawLoop02(int width, int height) {
               1, 1, 1);
 }
 
+void drawLoop03(int width, int height) {
+  // DrawString2("Quick fox? Yeah, this is the second window.", 36, 10, 80, 0,
+  // 1,
+  //             1, 1);
+  // DrawString2("1. hello\n2. what\n3. fany\n4. full\n5. world", 36, 10, 120,
+  // 0,
+  //             1, 1, 1);
+
+  // DrawString3(L"1. hello\n2. what\n3. fany\n4. full\n5. world\n6. window\n7. time\n8. hey", 18, 15, 120, 0,
+  //             1, 1, 1);
+  DrawString3(L"ll'zi\n1. 量子 ov\n2. 两字 ab\n3. 梁子 mv\n4. 良子 dv\n5. 凉子 dv\n6. 亮子 wv\n7. 梁紫 ms\n8. 两 ad", 18, 15, 120, 0,
+              1, 1, 1);
+}
+
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                    LPSTR lpCmdLine, int nCmdShow) {
 
@@ -484,7 +498,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
   // 这是另一个线程
   // DirectOverlaySetup(drawLoop, FindWindowW(NULL, L"Fany"));
   DirectOverlaySetup(drawLoop, desktopHwnd);
-  DirectOverlaySetup2(drawLoop02, desktopHwnd);
+  // DirectOverlaySetup2(drawLoop02, desktopHwnd);
+  DirectOverlaySetup2(drawLoop03, desktopHwnd);
 
   MSG msg;
   ZeroMemory(&msg, sizeof(msg));
